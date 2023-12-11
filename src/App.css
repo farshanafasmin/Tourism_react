@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+/* Styling for Nav component */
+.navbar {
+  /* margin: 15px; */
+  font-size: 15px;
+  font-weight: bold;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for Nav.Link component */
+.navbar-nav .nav-link {
+  margin-left: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper
+{
+ background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('images/paris.jpg');
+ height: 100vh;
+ background-position: center;
+ background-size: cover;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.head {
+ text-align: center;
+ color: white; /* Set the text color to white or any color that suits your design */
+ font-size: 50px;
+ font-weight: bold;
+ margin-left: -250px;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+ animation-name: fadeInUp;
+ animation-duration: 4.5s;
+}
+
+/* Define the fadeInUp animation */
+@keyframes fadeInUp {
+ from {
+   opacity: 0;
+   transform: translateY(20px);
+ }
+ to {
+   opacity: 1;
+   transform: translateY(0);
+ }
+}
+
+.button-container {
+  margin-top: 160px; /* Adjust the margin as needed */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-left: -400px;
+  gap: 20px; /* Adjust the gap between buttons as needed */
 }
